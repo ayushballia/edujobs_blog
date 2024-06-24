@@ -11,13 +11,13 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <div className="flex gap-4 w-10/12 m-auto my-3">
+      <div className="flex gap-6 w-11/12 m-auto my-3">
         <div className="w-3/4">
-          <h1 className="text-[32px] text-[#29394E] font-semibold mb-3.5 leading-10 my-6">
+          <h1 className="text-[32px] text-[#29394E] font-semibold mb-3.5 leading-10 my-6 w-[810px]">
             Microsoft esperá que te guste ChatGPT lo suficiente como para usar
             Bing
           </h1>
-          <p className="text-[16px] text-[#29394E] font-semibold mb-3.5 my-4">
+          <p className="text-[16px] text-[#29394E] font-semibold mb-3.5 my-4 w-[704px]">
             ChatGPT, la poderosa herramienta de Inteligencia Artificial que esta
             arrasando con todo, se une a Microsoft
           </p>
@@ -28,11 +28,11 @@ const Blog = () => {
             height={396}
             alt="for hire image"
           />
-          <h2 className="text-[24px] text-[#29394E] font-bold mb-3.5 my-5">
+          <h2 className="text-[24px] text-[#29394E] font-bold mb-3.5 my-5 w-[808px]">
             Una revolución esta por llegar al internet, será que ChatGPT sea la
             herramienta del futuro?
           </h2>
-          <p className="text-[16px] text-[#29394E] font-semibold mb-4">
+          <p className="text-[16px] text-[#29394E] font-semibold mb-4 w-[799px] text-justify">
             Grandes noticias para los padres que han estado usando la misma
             computadora portátil HP desde el primer mandato de Obama: Microsoft
             está trabajando en una nueva versión de su motor de búsqueda Bing
@@ -44,7 +44,7 @@ const Blog = () => {
             poema en verso libre sobre las mejores sillas de escritorio de 2023?
           </p>
 
-          <p className="text-[16px] text-[#29394E] font-semibold mb-4">
+          <p className="text-[16px] text-[#29394E] font-semibold mb-4 w-[799px]  text-justify">
             Y Google se está tomando en serio la amenaza de la IA. A pesar de
             las fallas de ChatGPT (incluidos los sesgos raciales notados y la
             tendencia a proporcionar respuestas incorrectas con confianza), el
@@ -66,7 +66,7 @@ const Blog = () => {
             Una revolución esta por llegar al internet, será que ChatGPT sea la
             herramienta del futuro?
           </h2>
-          <p className="text-[16px] text-[#29394E] font-semibold mb-4">
+          <p className="text-[16px] text-[#29394E] font-semibold mb-4 text-justify w-[799px]">
             Grandes noticias para los padres que han estado usando la misma
             computadora portátil HP desde el primer mandato de Obama: Microsoft
             está trabajando en una nueva versión de su motor de búsqueda Bing
@@ -78,7 +78,7 @@ const Blog = () => {
             poema en verso libre sobre las mejores sillas de escritorio de 2023?
           </p>
 
-          <p className="text-[16px] text-[#29394E] font-semibold mb-4">
+          <p className="text-[16px] text-[#29394E] font-semibold mb-4 text-justify w-[799px]">
             Y Google se está tomando en serio la amenaza de la IA. A pesar de
             las fallas de ChatGPT (incluidos los sesgos raciales notados y la
             tendencia a proporcionar respuestas incorrectas con confianza), el

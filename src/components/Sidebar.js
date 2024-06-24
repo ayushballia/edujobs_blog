@@ -4,7 +4,7 @@ import EllipseIcon from "@/images/Ellipse 537.svg";
 
 const Sidebar = () => {
   return (
-    <div className="w-1/4 p-3.5 border border-[#000000] border-opacity-20 rounded-[10px] mt-10 h-max ">
+    <div className="w-[316px] p-3.5 border border-[#000000] border-opacity-20 rounded-[10px] mt-10 h-max ">
       <h2 className="text-[24px] font-bold text-[#29394E] my-6">
         More of this
       </h2>
