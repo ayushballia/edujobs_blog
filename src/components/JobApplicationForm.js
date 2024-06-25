@@ -1,20 +1,32 @@
-"use client"
-import { useState } from 'react';
-import Label from './Label';
+"use client";
+import { useState } from "react";
+import Label from "@/components/From/Label";
+import InputField from "./From/InputField";
+import Dropdown from "./From/Dropdown";
+import IndiaIcon from "@/images/India.svg";
+import ImageGrid from "./ImageGrid";
+import Image from "next/image";
+import CircleIcon from "@/images/PlusCircle.svg";
+
+const jobOptions = [
+  { label: "UP Board", value: "up board" },
+  { label: "CBSE Board", value: "cbse board" },
+  { label: "ICSE Board", value: "icse board" },
+];
 
 const JobApplicationForm = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    job: '',
-    mobileNumber: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    job: "",
+    mobileNumber: "",
     resume: null,
   });
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    if (name === 'resume') {
+    if (name === "resume") {
       setFormData({ ...formData, [name]: files[0] });
     } else {
       setFormData({ ...formData, [name]: value });
@@ -28,74 +40,71 @@ const JobApplicationForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h1 className="text-[24px] font-semibold text-center mb-4 text-[#677B8C] tracking-[4px]">BUILD A BETTER FUTURE</h1>
-      <p className="text-center text-[20px] text-[#232323] font-semibold mb-6">Find a job you deserve, with Education Jobs</p>
-      <div className="mb-4">
-        <Label title={"First name"}/>
-        <input
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-          value={formData.firstName}
-          onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </div>
-      <div className="mb-4">
-        <input
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-          value={formData.lastName}
-          onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </div>
-      <div className="mb-4">
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </div>
-      <div className="mb-4">
-        <select
-          name="job"
-          value={formData.job}
-          onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
+    <div className="flex gap-8 justify-center">
+      <form onSubmit={handleSubmit}>
+        <h1 className="text-[24px] font-semibold text-center mb-4 text-[#677B8C] tracking-[4px]">
+          BUILD A BETTER FUTURE
+        </h1>
+        <p className="text-center text-[20px] text-[#232323] font-semibold mb-6">
+          Find a job you deserve, with Education Jobs
+        </p>
+        <div className="flex gap-5 mb-7">
+          <Label title={"First name"}>
+            <InputField />
+          </Label>
+
+          <Label title={"Last name"}>
+            <InputField />
+          </Label>
+        </div>
+
+        <div className="mb-7">
+          <Label title={"email address"}>
+            <InputField />
+          </Label>
+        </div>
+
+        <div className="mb-7">
+          <Dropdown label="Job you are applying" options={jobOptions} />
+        </div>
+
+        <div className="mb-7">
+          <Label title={"Mobile Number address"}>
+            <InputField type="tel" placeholder="mobile" icon={IndiaIcon} />
+          </Label>
+        </div>
+
+        <div className="mb-4">
+          <Label title={"upload resume"}>
+            <div className="flex gap-4 border-2 p-[20px] border-dashed rounded-[6px]">
+              <Image
+                src={CircleIcon}
+                width={32}
+                height={32}
+                alt="circle icon"
+                className="w-auto"
+              />
+              <div className="flex flex-col w-full">
+                <span className="text-[14px] font-medium leading-normal">
+                  Upload Logo
+                </span>
+                <span className="text-[14px] text-[#5E6670] font-normal  leading-normal">
+                  Browse files or drop here. only PDF
+                </span>
+              </div>
+              <input type="file" className="hidden" />
+            </div>
+          </Label>
+        </div>
+        <button
+          type="submit"
+          className="text-[16px] font-bold px-[24px] py-[12px] bg-[#0086CA] text-white rounded-[15px]"
         >
-          <option value="">Select the Job</option>
-          {/* Add job options here */}
-        </select>
-      </div>
-      <div className="mb-4">
-        <input
-          type="tel"
-          name="mobileNumber"
-          placeholder="Mobile Number"
-          value={formData.mobileNumber}
-          onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </div>
-      <div className="mb-4">
-        <input
-          type="file"
-          name="resume"
-          accept=".pdf"
-          onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </div>
-      <button type="submit" className="w-full p-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-        SUBMIT
-      </button>
-    </form>
+          SUBMIT
+        </button>
+      </form>
+      <ImageGrid />
+    </div>
   );
 };
 
