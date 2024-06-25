@@ -21,35 +21,35 @@ export default function Links() {
         </li>
         <li>
           <Link
-            className={`link ${
+            className={`capitalize link ${
+              pathname === "/about-us" ? "text-blue-500 font-semibold" : ""
+            }`}
+            href="/about-us"
+          >
+            about us
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={`capitalize link ${
               pathname === "/job-application-form" ? "text-blue-500 font-semibold" : ""
             }`}
             href="/job-application-form"
           >
-            job-application-form
+            job application form
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link
-            className={`link ${
-              pathname === "/registering" ? "text-blue-500 font-semibold" : ""
+            className={`capitalize link ${
+              pathname === "/get-in-touch" ? "text-blue-500 font-semibold" : ""
             }`}
-            href="/registering"
+            href="/get-in-touch"
           >
-            Registering
+            Get in touch
           </Link>
         </li>
         
-        <li>
-          <Link
-            className={`link ${
-              pathname === "/profile-update/jobDetail" ? "text-blue-500 font-semibold" : ""
-            }`}
-            href="/profile-update/jobDetail"
-          >
-            Update Profile
-          </Link>
-        </li> */}
       </ul>
     </nav>
   );
