@@ -42,6 +42,16 @@ export default function Links() {
         <li>
           <Link
             className={`capitalize link ${
+              pathname === "/job-table" ? "text-blue-500 font-semibold" : ""
+            }`}
+            href="/job-table"
+          >
+            job Table
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={`capitalize link ${
               pathname === "/get-in-touch" ? "text-blue-500 font-semibold" : ""
             }`}
             href="/get-in-touch"
