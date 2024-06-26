@@ -7,6 +7,7 @@ import IndiaIcon from "@/images/India.svg";
 import ImageGrid from "./ImageGrid";
 import Image from "next/image";
 import CircleIcon from "@/images/PlusCircle.svg";
+import CountryCodeInput from "./From/CountryCodeInput";
 
 const jobOptions = [
   { label: "UP Board", value: "up board" },
@@ -42,10 +43,10 @@ const JobApplicationForm = () => {
   return (
     <div className="flex gap-8 justify-center">
       <form onSubmit={handleSubmit}>
-        <h1 className="text-[24px] font-semibold text-center mb-4 text-[#677B8C] tracking-[4px]">
+        <h1 className="text-[24px] font-semibold mb-4 text-[#677B8C] tracking-[4px]">
           BUILD A BETTER FUTURE
         </h1>
-        <p className="text-center text-[20px] text-[#232323] font-semibold mb-6">
+        <p className="text-[20px] text-[#232323] font-semibold mb-6 tracking-[2px]">
           Find a job you deserve, with Education Jobs
         </p>
         <div className="flex gap-5 mb-7">
@@ -70,6 +71,7 @@ const JobApplicationForm = () => {
 
         <div className="mb-7">
           <Label title={"Mobile Number address"}>
+            <CountryCodeInput/>
             <InputField type="tel" placeholder="mobile" icon={IndiaIcon} />
           </Label>
         </div>

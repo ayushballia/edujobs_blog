@@ -5,7 +5,7 @@ import EmailIcon from "@/images/EmailIcon.svg";
 
 const page = () => {
   return (
-    <div className="flex gap-6 justify-center">
+    <div className="flex gap-6 justify-center items-center">
       <div className="w-[545px]">
         <h1 className="text-[54px] text-[#000000] font-bold ">
           Get in <span className="text-[#0086CA] ">Touch</span>
@@ -31,9 +31,21 @@ const page = () => {
             className="block w-full border mb-4 px-[20px] py-[12px] text-[14px] font-normal text-[#828282]"
             placeholder="Phone number"
           />
-          <select className="block border mb-4 w-full px-[20px] py-[12px] text-[14px] font-normal text-[#828282] ">
-            <option>How did you find us?</option>
-          </select>
+
+          <div className="relative">
+            <select className="block appearance-none border mb-4 w-full px-[20px] py-[12px] text-[14px] font-normal text-[#000000] ">
+              <option>How did you find us?</option>
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-[#000000]">
+              <svg
+                className="fill-current h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+            </div>
+          </div>
           <button
             type="submit"
             className="w-full bg-[#0086CA] text-white text-[16px] font-bold uppercase py-[12px] rounded-[6px]"

@@ -11,7 +11,7 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <div className="flex gap-6 w-11/12 m-auto my-3">
+      <div className="flex justify-between w-11/12 m-auto my-3">
         <div className="w-3/4">
           <h1 className="text-[32px] text-[#29394E] font-semibold mb-3.5 leading-10 my-6 w-[810px]">
             Microsoft esperá que te guste ChatGPT lo suficiente como para usar
@@ -62,7 +62,7 @@ const Blog = () => {
             height={396}
             alt="for hire image"
           />
-          <h2 className="text-[24px] text-[#29394E] font-bold mb-3.5 my-5">
+          <h2 className="text-[24px] text-[#29394E] font-bold mb-3.5 my-5 w-[799px]">
             Una revolución esta por llegar al internet, será que ChatGPT sea la
             herramienta del futuro?
           </h2>
