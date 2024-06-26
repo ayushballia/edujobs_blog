@@ -76,27 +76,27 @@ const JobTable = () => {
               <td className="py-[30px] border-b text-[16px] font-bold text-[#232323CC] text-opacity-80 ">
                 {job.title}
               </td>
-              <td className="py-2 px-4 border-b">
+              <td className="py-2 border-b">
                 <span
-                  className={`px-[17px] py-[15px] rounded-full ${
+                  className={`px-[17px] py-[8px] rounded-full ${
                     statusColors[job.status]
                   }`}
                 >
                   {job.status}
                 </span>
               </td>
-              <td className="py-2 px-4 border-b text-[16px] font-bold text-[#232323CC] text-opacity-80">
+              <td className="py-[30px] border-b text-[16px] font-bold text-[#232323CC] text-opacity-80">
                 {job.date}
               </td>
-              <td className="py-2 px-4 border-b text-[16px] font-bold text-[#232323CC] text-opacity-80">
+              <td className="py-[30px] border-b text-[16px] font-bold text-[#232323CC] text-opacity-80">
                 {job.views}
               </td>
-              <td className="py-2 px-4 border-b">
-                <button className="text-white bg-[#0A65CC] text-[20px] font-semibold px-[9px] py-[17px] rounded-[15px]">
+              <td className="py-2 border-b">
+                <button className="text-white bg-[#0A65CC] text-[20px] font-semibold px-[9px] py-[11px] rounded-[15px]">
                   View ({job.applicants})
                 </button>
               </td>
-              <td className="py-2 px-4 border-b">
+              <td className="py-2 border-b">
                 <VerticalEllipsis />
               </td>
             </tr>
