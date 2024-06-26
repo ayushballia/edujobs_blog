@@ -27,7 +27,7 @@ const InputField = ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className={`w-full capitalize px-[22px] py-[12px] text-[13px] w-full border  p-2 rounded-[12px] ${
+        className={`w-full  px-[22px] py-[12px] text-[13px] font-semibold w-full border  p-2 rounded-[12px] ${
           error ? "border-red-500" : "border-[#66666659] border-opacity-[25%]"
         } ${icon ? "pl-[40px]" : ""}`}
         disabled={disabled}

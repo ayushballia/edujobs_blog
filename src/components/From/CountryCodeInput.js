@@ -23,7 +23,7 @@ const CountryCodeInput = () => {
       </div>
       <input
         type="tel"
-        className="ml-2w-full capitalize px-[22px] py-[12px] text-[13px] w-full"
+        className="ml-2w-full capitalize px-[22px] py-[12px] text-[13px] font-semibold w-full"
         placeholder="Enter phone number"
       />
     </div>

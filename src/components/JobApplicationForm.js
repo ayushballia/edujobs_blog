@@ -49,7 +49,7 @@ const JobApplicationForm = () => {
         <p className="text-[20px] text-[#232323] font-semibold mb-6 tracking-[2px]">
           Find a job you deserve, with Education Jobs
         </p>
-        <div className="flex gap-5 mb-7">
+        <div className="flex justify-between items-center mb-7">
           <Label title={"First name"}>
             <InputField />
           </Label>
@@ -61,7 +61,7 @@ const JobApplicationForm = () => {
 
         <div className="mb-7">
           <Label title={"email address"}>
-            <InputField />
+            <InputField type="email" />
           </Label>
         </div>
 
@@ -71,8 +71,7 @@ const JobApplicationForm = () => {
 
         <div className="mb-7">
           <Label title={"Mobile Number address"}>
-            <CountryCodeInput/>
-            <InputField type="tel" placeholder="mobile" icon={IndiaIcon} />
+            <CountryCodeInput />
           </Label>
         </div>
 
