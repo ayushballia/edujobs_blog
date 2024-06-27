@@ -51,7 +51,7 @@ const page = () => {
         <div className="flex justify-evenly items-center">
           <div className="hover:bg-[#0086CA] w-[358px] h-[308px] p-[30px] border rounded-[12px] group">
             <div className="mb-2 bg-[#0086CA] group-hover:bg-white px-[12px] py-[11px] rounded-[10px] bg-[#0086CA] w-[46px] h-[48px]">
-              <Image src={Icon} width={26} height={24} alt="icon" />
+              <Image src={Icon} width={26} height={24} alt="icon" className="group-hover:filter group-hover:invert" />
             </div>
             <h3 className="my-2 ml-2 text-[22px] font-semibold group-hover:text-white">
               Your Search Ends Here
@@ -64,7 +64,7 @@ const page = () => {
           </div>
           <div className="hover:bg-[#0086CA] w-[358px] h-[308px] p-[30px] border rounded-[12px] group">
             <div className="mb-2 bg-[#0086CA] group-hover:bg-white px-[12px] py-[11px] rounded-[10px] bg-[#0086CA] w-[46px] h-[48px]">
-              <Image src={Icon1} width={26} height={24} alt="icon" />
+              <Image src={Icon1} width={26} height={24} alt="icon" className="group-hover:filter group-hover:invert"/>
             </div>
             <h3 className="my-2 ml-2 text-[22px] font-semibold group-hover:text-white">
               Comprehensive Listings
@@ -78,7 +78,7 @@ const page = () => {
           </div>
           <div className="hover:bg-[#0086CA] w-[358px] h-[308px] p-[30px] border rounded-[12px] group">
             <div className="mb-2 bg-[#0086CA] group-hover:bg-white px-[12px] py-[11px] rounded-[10px] bg-[#0086CA] w-[46px] h-[48px]">
-              <Image src={Icon2} width={26} height={24} alt="icon" />
+              <Image src={Icon2} width={26} height={24} alt="icon" className="group-hover:filter group-hover:invert"/>
             </div>
             <h3 className="my-2 ml-2 text-[22px] font-semibold group-hover:text-white">
               Tailored for Educators
@@ -145,7 +145,7 @@ const page = () => {
             <Image
               src={Ellipse}
               width={54}
-              className="index-0"
+              className="index-0 rotate-90"
               height={54}
               alt="ellipse background"
             />
@@ -187,7 +187,7 @@ const page = () => {
             <Image
               src={Ellipse}
               width={54}
-              className="index-0"
+              className="index-0 rotate-90"
               height={54}
               alt="ellipse background"
             />
